@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+}
+
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    display: block;
+}
+
+
+/* navigation bar */
+/* 왼쪽 상단 작은 로고 */
+
+nav {
+    display: block;
+    background-color: white;
+    height: 0.2rem;
+    margin: 2rem;
+    margin-top: 1rem;
+    line-height: 40px;
+    
+}
+
+.menu {
+    text-align: right;
+}
+
+.menu img {
+    height: 1.2rem;
+}
+
+.small-logo {
+    display: flex;
+    float: left;
+    margin: 0;
+}
+
+
+.small-logo img {
+    height: 2rem;
+}
+
+/*첫번째 페이지 */
+/* 메인로고를 보여주는 헤더이자 첫번째 페이지 */
+/* 정중앙에 메인 로고 띄우고 밑에 설명 두줄 간략히 첨부 */
+
+.first-page:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 800px;
+    opacity: 0.5;
+    background-image: url("./media/logobackground.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.first-page{
+    position: relative;
+    padding-top: 200px;
+}
+
+
+.first-title {
+    text-align: center;
+}
+
+
+.title-description {
+    font-size: 20px;
+}
+
+.main-logo{
+    font-family: Allura;
+    font-size: 10rem;
+    margin-bottom: 5rem;
+}
+
+.first-content{
+    margin-bottom: 20rem;
+
+}
+
+/* second page */
+/* 대표적인 기능 3가지 */
+/* 페이지 왼,가운데, 오로 삼분할*/
+.second-page {
+    height: 750px;
+}
+
+.second-page .container{
+    position: relative;
+    margin: 13rem;
+    margin-bottom: 0rem;
+}
+
+.second-page .container .second-main img {
+    position: relative;
+    height: 40rem;
+}
+
+
+.line img {
+    position: relative;
+    width: 2px;
+    height: 40rem;
+    left: 29rem;
+    bottom: 40rem;
+}
+
+/* 기능 1,2,3 */
+
+.function {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.func-expl .func-expl-course, .func-expl .func-expl-navi, .func-expl .func-expl-route {
+    position: relative;
+    width: 35rem;
+    left: 32rem;
+    text-align: center;
+    
+}
+
+.explanation {
+    color: rgb(91, 91, 91);
+}
+
+.func-expl .func-expl-course {
+    bottom: 78rem;
+    
+}
+
+.func-expl .func-expl-navi {
+    bottom: 74rem;
+
+}
+
+.func-expl .func-expl-route {
+    bottom: 70rem;
+
+}
+
+.third-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 650px;
+}
+.third-container .summary-walk .content {
+    text-align: center;
+}
+
+.summary-walk, .summary-cycle{
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.summary-running{
+    padding-top:10rem;
+    text-align: center;
+    border-left: 2px solid #D3D3D3;
+    border-right: 2px solid #D3D3D3;
+}
+
+
+/* 네번째 페이지 */
+/* 산책 상세 페이지 */
+/* 페이지를 좌/우로 나눠 왼쪽에는 계절별 산책 코스 추천,오른쪽에는 테마별 산책 코스 추천 예시 첨부 */
+/* 공통부분 */
+.fourth-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 750px;
+    column-gap: 2rem;
+}
+
+
+.fourth-container .content{
+    font-size: 19px;
+    margin-top: 18rem;
+    text-align: center;
+    /* align-items: center;  */
+}
+
+.fourth-content p {
+    margin-right: 100px;
+}
+
+.example-season{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: 6rem;
+    margin-right: 3rem;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+}
+
+.fourth-container img{
+    height: 30rem;
+    flex-wrap: nowrap;
+    padding-bottom:20px;
+}
+
+.fourth_image_1{
+    position: absolute;
+    padding-left: 5rem;
+}
+
+.fourth_image_2{
+    position: relative;
+    padding-top: 5rem;
+    padding-left: 17rem;
+}
+
+.example-theme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+/* <!-- 다섯번째 페이지 --> */
+/* <!-- 러닝 상세 페이지 --> */
+/* <!-- 페이지를 위/아래(왼/가운데/오)로 나누어서 */
+/* 위: 최선의 경로 제공 */
+/* 아래(왼)  : 보이스 코치 기능 */
+/* 아래(중간): 기록 및 경로 공유 */
+/* 아래(오)  : 러닝크루 모집, 대회 정보 제공--> */
+/* 공통부분 */
+
+.fifth-page{
+    width: 100%;
+    height: 1100px;
+}
+
+.crosswalk img{
+    overflow: hidden;
+    width: 60%;
+}
+
+
+.main-content{
+    text-align: center;
+}
+
+/* 개별부분 */
+
+.main-phrase-content{
+    text-align: center;
+}
+
+.main-phrase{
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.main-phrase span{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+
+/* 아래쪽세션 */
+.below-top{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    font-size: 20px;
+}
+
+.below-left{
+    padding-top: 2rem;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    width: 33.3%;
+    height: 20rem;
+}
+
+
+.below-middle{
+    padding-top: 2rem;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    width: 33.3%;
+    height: 20rem;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: cadetblue;
+}
+
+/* 아래 오른쪽 세션 */
+.below-right{
+    padding-top: 2rem;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    width: 33.3%;
+    height: 20rem;
+}
+
+.phrase{
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.phrase span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.functions{
+    margin-top: 0;
+    font-size: 125px;
+}
+
+.six {
+    display: block;
+}
+
+.sixth-container{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 750px;
+}
+
+.example-img {
+    margin-left: 100px;
+    text-align: center;
+}
+
+.example-img img {
+    height: 35rem;
+    align-items: center;
+    text-align: center;
+}
+
+.section-cycle-main {
+    margin-top: 15rem;
+    margin-left: 5rem;
+}
+
+.title-cycle-main {
+    font-size: 30px;
+}
+
+.content-cycle-main {
+    margin-top:30px;
+    color: #808080;
+}
